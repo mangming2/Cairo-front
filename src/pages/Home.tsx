@@ -3,6 +3,7 @@ import About from "./About";
 import Contact from "./Contact";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import Img from "../../public/cairo.jpeg";
+import Desert from "../../public/desert.jpg";
 import { BsDiscord, BsTwitter } from "react-icons/bs";
 
 function Home({ sectionRefs }: { sectionRefs: any }) {
@@ -105,7 +106,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
           </div>
 
           <div
-            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            className=" bg-desert bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
             {...animatedItem[0]}
           >
             <img src={Img} className="h-[600px]" alt="logo" />
@@ -121,7 +122,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </div>
           </div>
           <div
-            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            className=" bg-desert2 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
             {...animatedItem[1]}
           >
             <img src={Img} className="h-[600px]" alt="logo" />
@@ -137,7 +138,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </div>
           </div>
           <div
-            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            className=" bg-desert3 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
             {...animatedItem[2]}
           >
             <img src={Img} className="h-[600px]" alt="logo" />

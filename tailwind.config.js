@@ -5,6 +5,11 @@ module.exports = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        desert: "url('../public/desert.jpg')",
+        desert2: "url('../public/desert2.jpg')",
+        desert3: "url('../public/desert3.jpg')",
+      },
       fonts: {},
       fontSize: {
         sm: "0.8rem",
