@@ -85,60 +85,67 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </p>
           </div>
 
-          <div className="h-[800px] p-20" {...animatedItem[0]}>
+          <div
+            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            {...animatedItem[0]}
+          >
             <img src={Img} className="h-[600px]" alt="logo" />
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-4xl">Title</h1>
+              <h1 className="text-2xl">
+                {" "}
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription
+              </h1>
+            </div>
           </div>
-          <div className="h-[800px] p-20" {...animatedItem[1]}>
+          <div
+            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            {...animatedItem[1]}
+          >
             <img src={Img} className="h-[600px]" alt="logo" />
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-4xl">Title</h1>
+              <h1 className="text-2xl">
+                {" "}
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription
+              </h1>
+            </div>
           </div>
-          <div className="h-[800px] p-20" {...animatedItem[2]}>
+          <div
+            className="flex flex-col items-center justify-center w-[100vw] bg-black h-[800px] p-20"
+            {...animatedItem[2]}
+          >
             <img src={Img} className="h-[600px]" alt="logo" />
-          </div>
-
-          <div className="mt-5">
-            <ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-              <li>
-                <div className="flex">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                      <svg
-                        className="h-6 w-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 9l2 2m0 0l7 7 7-7m-7 7V3"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg leading-6 font-medium text-gray-900">
-                      Competitive exchange rates
-                    </h4>
-                    <p className="mt-2 text-base leading-6 text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsa libero labore natus.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-4xl">Title</h1>
+              <h1 className="text-2xl">
+                {" "}
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription criptionDescription criptionDescription
+                criptionDescription
+              </h1>
+            </div>
           </div>
         </div>
       </div>
 
-      <div ref={sectionRefs[2]} className="bg-gray-50">
-        <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+      <div
+        ref={sectionRefs[2]}
+        className="flex justify-center items-center  bg-gray-50"
+      >
+        <div className=" max-w-screen-xl flex flex-col justify-center items-center ">
+          <div className="flex flex-col justify-center items-center text-center">
+            <h2 className="text-4xl text-indigo-600 font-semibold uppercase">
               Our Team
             </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-6xl leading-8 font-extrabold tracking-tight text-gray-900 ">
               RoadMap
             </p>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
@@ -146,15 +153,15 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
               magnam voluptatum cupiditate veritatis in accusamus quisquam.
             </p>
           </div>
-          <div className="flex ">
-            <div className="mr-8 h-100 w-3 bg-gray-300 relative">
+          <div className="flex m-8 ">
+            <div className="m-4 h-100 w-3 bg-gray-300 relative">
               <div className="h-full w-full bg-blue-500 absolute top-0 left-0 animate-fill"></div>
             </div>
 
             <div className="mt-10">
-              <div className="text-black">
-                <h1>Phase 1</h1>
-                <h1>Phase 1 Description</h1>
+              <div className="m-4 text-center text-black">
+                <h1 className="text-4xl">Phase 1</h1>
+                <h1 className="text-2xl">Phase 1 Description</h1>
                 <div>
                   Phase 1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase
                   1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
@@ -163,9 +170,9 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                   Description
                 </div>
               </div>
-              <div className="text-black">
-                <h1>Phase 1</h1>
-                <h1>Phase 1 Description</h1>
+              <div className="m-4 text-center text-black">
+                <h1 className="text-4xl">Phase 1</h1>
+                <h1 className="text-2xl">Phase 1 Description</h1>
                 <div>
                   Phase 1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase
                   1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
@@ -174,9 +181,9 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                   Description
                 </div>
               </div>
-              <div className="text-black">
-                <h1>Phase 1</h1>
-                <h1>Phase 1 Description</h1>
+              <div className="m-4 text-center text-black">
+                <h1 className="text-4xl">Phase 1</h1>
+                <h1 className="text-2xl">Phase 1 Description</h1>
                 <div>
                   Phase 1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase
                   1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
@@ -185,9 +192,9 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                   Description
                 </div>
               </div>
-              <div className="text-black">
-                <h1>Phase 1</h1>
-                <h1>Phase 1 Description</h1>
+              <div className="m-4 text-center text-black">
+                <h1 className="text-4xl">Phase 1</h1>
+                <h1 className="text-2xl">Phase 1 Description</h1>
                 <div>
                   Phase 1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase
                   1 DescriptionPhase 1 DescriptionPhase 1 DescriptionPhase 1
@@ -196,6 +203,9 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                   Description
                 </div>
               </div>
+            </div>
+            <div className="m-4 h-100 w-3 bg-gray-300 relative">
+              <div className="h-full w-full bg-blue-500 absolute top-0 left-0 animate-fill"></div>
             </div>
           </div>
         </div>

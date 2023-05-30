@@ -65,7 +65,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
             }}
             className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
           >
-            About Us
+            About
           </div>
         </div>
       </div>
