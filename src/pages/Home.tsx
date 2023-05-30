@@ -49,7 +49,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                 Welcome
               </h1>
             </div>
-            <div className=" animate-wiggle m-16 max-md:mt-4 ">
+            <div className="flex justify-center items-center animate-wiggle m-16 max-md:mt-4 ">
               <img src={Img} alt="logo" className=" w-96 h-96" />
             </div>
           </div>
