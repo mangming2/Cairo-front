@@ -26,7 +26,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
               handleClickNavLink(0);
               setMobileMenuOpen(false);
             }}
-            className="flex  md:inline-block md:mt-0 text-gray-200 hover:text-white m-2"
+            className="flex  md:inline-block md:mt-0 max-md:mt-6 text-gray-200 hover:text-white m-2"
             // onClick={() => setMobileMenuOpen(false)}
           >
             Welcome

@@ -3,6 +3,7 @@ import About from "./About";
 import Contact from "./Contact";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import Img from "../../public/cairo.jpeg";
+import { BsDiscord, BsTwitter } from "react-icons/bs";
 
 function Home({ sectionRefs }: { sectionRefs: any }) {
   const targetNumber = 100;
@@ -36,7 +37,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
       <div ref={sectionRefs[0]}>
         <div className="max-w-screen-lg mt-12 mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex max-md:flex-col ">
-            <div className=" h-auto m-16">
+            <div className=" h-auto m-8">
               <h1 className=" animate-down  leading-[4rem]  text-6xl p-5 font w-auto  m-4 font-extrabold text-gray-900  ">
                 Welcome to our NFT
               </h1>
@@ -53,17 +54,35 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
           </div>
 
           <div className=" flex items-center justify-center mx-auto">
-            <h1 className="m-4 text-4xl">발행 개수: </h1>
-            <h1 className="m-4 text-4xl"> {currentNumber} 개</h1>
+            <div className="flex max-md:flex-col">
+              <div className="flex">
+                <h1 className="m-4 text-4xl ">발행 개수: </h1>
+                <h1 className="m-4 text-4xl "> {currentNumber} 개</h1>
+              </div>
+              <button
+                onClick={() => {
+                  console.log("click");
+                }}
+                className="flex items-center justify-center m-4 text-4xl  "
+              >
+                <BsDiscord className="text-4xl m-2" />
+                Discord
+              </button>
+
+              <button className="flex items-center justify-center m-4 text-4xl  ">
+                <BsTwitter className="text-4xl m-2" />
+                Twitter
+              </button>
+            </div>
           </div>
 
-          <div className=" max-md:mt-4">
+          <div className="mt-8">
             <div>
               <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
                 Our Promise
               </h2>
             </div>
-            <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+            <p className="mt-4 text-xl leading-7 text-gray-500 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               consequat metus vitae enim accumsan, sed congue sapien ultrices.
               Mauris nec ante ante. Maecenas scelerisque, tellus vel fermentum
@@ -74,7 +93,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
       </div>
 
       <div ref={sectionRefs[1]} className="bg-gray-50">
-        <div className="flex flex-col items-center justify-center max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="mt-16 flex flex-col items-center justify-center max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className=" text-center">
             <p className="mt-2 m-auto text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               NFT Story
@@ -230,13 +249,24 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             <div className="flex max-md:flex-col justify-center items-center ml-4">
               <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
-                <h1 className=" text-2xl text-black ">Name</h1>
+                <div className="flex items-center justify-between">
+                  <h1 className=" text-2xl text-black ">Name</h1>
+                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                </div>
               </div>
-              <div className="m-14">
+              <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
+                <div className="flex items-center justify-between">
+                  <h1 className=" text-2xl text-black ">Name</h1>
+                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                </div>
               </div>
-              <div className="m-14">
+              <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
+                <div className="flex items-center justify-between">
+                  <h1 className=" text-2xl text-black ">Name</h1>
+                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                </div>
               </div>
             </div>
           </div>
