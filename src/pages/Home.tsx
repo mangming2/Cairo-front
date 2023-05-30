@@ -237,7 +237,7 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
               Our Team
             </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-5xl leading-8 font-extrabold tracking-tight text-gray-900 ">
               Meet our team
             </p>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
@@ -275,7 +275,30 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
       </div>
 
       <div ref={sectionRefs[4]}>
-        <About />
+        <div className="max-w-screen-lg  mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+              About Us
+            </h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Go to Nile
+            </p>
+            <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+            </p>
+            <div>
+              <button className="flex  items-center justify-center m-auto mt-32 mb-32 text-4xl  ">
+                Go to Nile
+              </button>
+
+              <div className="overflow-hidden relative">
+                <div className="absolute left-0 top-0 h-full bg-blue-500  animate-water"></div>
+                <div className="relative z-10 p-4 h-16">내용을 추가하세요</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

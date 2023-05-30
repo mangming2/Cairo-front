@@ -33,11 +33,17 @@ module.exports = {
           "0%": { height: "0%" },
           "100%": { height: "100%" },
         },
+        water: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
         down: "down 1s ease-in-out",
         fill: "fill 3s ease-in-out infinite",
+        water: "water 2s ease-in-out infinite",
       },
     },
   },
