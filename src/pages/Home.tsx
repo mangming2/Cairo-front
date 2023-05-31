@@ -52,23 +52,28 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </div>
           </div>
 
-          <div className=" flex items-center justify-center mx-auto">
-            <div className="flex max-md:flex-col">
-              <div className="flex">
-                <h1 className="m-4 text-4xl ">발행 개수: </h1>
-                <h1 className="m-4 text-4xl "> {currentNumber} 개</h1>
+          <div className=" flex  text-black items-center justify-center mx-auto">
+            <div className="flex items-center justify-center max-md:flex-col">
+              <div className="flex max-md:flex-col ">
+                <h1 className="m-4 text-4xl ">Collection size : </h1>
+                <h1 className="m-4 text-4xl "> {currentNumber} Cairos</h1>
               </div>
               <button
                 onClick={() => {
-                  console.log("click");
+                  alert(" This service is still in preparation");
                 }}
-                className="flex items-center justify-center m-4 text-4xl  "
+                className="flex border-solid border-2 p-2 rounded-xl border-black  items-center justify-center m-4 text-4xl  "
               >
-                <BsDiscord className="text-4xl m-2" />
+                <BsDiscord className="text-4xl mr-2" />
                 Discord
               </button>
 
-              <button className="flex items-center justify-center m-4 text-4xl  ">
+              <button
+                onClick={() => {
+                  window.open("https://twitter.com/Cairofoxes");
+                }}
+                className="flex border-solid border-2 p-2 rounded-xl border-black items-center justify-center m-4 text-4xl  "
+              >
                 <BsTwitter className="text-4xl m-2" />
                 Twitter
               </button>
@@ -92,27 +97,27 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
       </div>
 
       <div ref={sectionRefs[1]} className="bg-gray-50">
-        <div className="mt-16 flex flex-col items-center justify-center max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className=" text-center">
-            <p className="mt-2 m-auto text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="mt-4 flex flex-col items-center justify-center max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div className="m-4 text-center">
+            <p className="mt-2 mb-2 m-auto text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               NFT Story
             </p>
-            <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+            <p className="mt-4 mb-16 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
               Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
               magnam voluptatum cupiditate veritatis in accusamus quisquam.
             </p>
           </div>
 
-          <div className=" bg-desert bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+          <div className=" bg-desert bg-cover flex flex-col items-center justify-center w-[100vw] h-[900px] p-20">
             <img
               src={Img}
               {...(animatedItem[0] as any)}
-              className=" max-md:h-[400px] h-[600px]"
+              className=" max-md:h-[400px] h-[500px]"
               alt="logo"
             />
-            <div className="flex flex-col items-center justify-center text-center">
+            <div className="mt-12 flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
-              <h1 className="text-2xl">
+              <h1 className="text-2xl ">
                 {" "}
                 criptionDescription criptionDescription criptionDescription
                 criptionDescription criptionDescription criptionDescription
@@ -122,14 +127,14 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </div>
           </div>
 
-          <div className=" bg-desert2 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+          <div className=" bg-desert2 bg-cover flex flex-col items-center justify-center w-[100vw] h-[900px] p-20">
             <img
               src={Img}
               {...(animatedItem[1] as any)}
-              className="max-md:h-[400px] h-[600px]"
+              className="max-md:h-[400px] h-[500px]"
               alt="logo"
             />
-            <div className="flex flex-col items-center justify-center text-center">
+            <div className="mt-12 flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
               <h1 className="text-2xl">
                 {" "}
@@ -140,14 +145,14 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
               </h1>
             </div>
           </div>
-          <div className=" bg-desert3 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+          <div className=" bg-desert3 bg-cover flex flex-col items-center justify-center w-[100vw] h-[900px] p-20">
             <img
               {...(animatedItem[2] as any)}
               src={Img}
-              className=" max-md:h-[400px] h-[600px]"
+              className=" max-md:h-[400px] h-[500px]"
               alt="logo"
             />
-            <div className="flex flex-col items-center justify-center text-center">
+            <div className="mt-12 flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
               <h1 className="text-2xl">
                 {" "}
@@ -255,23 +260,23 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             <div className="flex max-md:flex-col justify-center items-center ml-4">
               <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
-                <div className="flex items-center justify-between">
-                  <h1 className=" text-2xl text-black ">Name</h1>
-                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                <div className="flex flex-col items-center justify-between">
+                  <h1 className=" text-xl text-black ">Name</h1>
+                  <h2 className=" text-xl text-black ">FrontEnd Developer</h2>
                 </div>
               </div>
               <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
-                <div className="flex items-center justify-between">
-                  <h1 className=" text-2xl text-black ">Name</h1>
-                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                <div className="flex flex-col items-center justify-between">
+                  <h1 className=" text-xl text-black ">Name</h1>
+                  <h2 className=" text-xl text-black ">FrontEnd Developer</h2>
                 </div>
               </div>
               <div className="m-14 flex-col">
                 <img src={Img} className="w-[300px] h-[300px]" alt="logo" />
-                <div className="flex items-center justify-between">
-                  <h1 className=" text-2xl text-black ">Name</h1>
-                  <h2 className=" text-2xl text-black ">FrontEnd Developer</h2>
+                <div className="flex flex-col items-center justify-between">
+                  <h1 className=" text-xl text-black ">Name</h1>
+                  <h2 className=" text-xl text-black ">FrontEnd Developer</h2>
                 </div>
               </div>
             </div>

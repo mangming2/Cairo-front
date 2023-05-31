@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="flex  items-center">
+    <header className="flex  font-[Lilita] items-center">
       <div className="block md:hidden mr-5 ">
         <button
           className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
