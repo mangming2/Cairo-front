@@ -7,7 +7,7 @@ function NavBar({ handleClickNavLink }: { handleClickNavLink: any }) {
     <header className="flex  font-[Lilita] items-center">
       <div className="block md:hidden mr-5 ">
         <button
-          className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 border rounded text-gray-200  hover:text-white hover:border-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg
