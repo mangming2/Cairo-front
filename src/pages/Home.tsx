@@ -307,10 +307,16 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
                 Go to Nile
               </button>
 
+              {/* <div className="relative h-20 w-200">
+                <div className="absolute inset-0 overflow-hidden rounded-full">
+                  <div className="h-full w-full bg-wave animate-wave"></div>
+                  <div className="h-full w-full bg-wave animate-wave animation-delay-2"></div>
+                  <div className="h-full w-full bg-wave animate-wave animation-delay-3"></div>
+                </div>
+              </div>
               <div className="overflow-hidden relative">
                 <div className="absolute left-0 top-0 h-full bg-blue-500  animate-water"></div>
-                <div className="relative z-10 p-4 h-16">내용을 추가하세요</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

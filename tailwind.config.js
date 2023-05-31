@@ -38,12 +38,20 @@ module.exports = {
           "50%": { transform: "translateY(-50%)" },
           "100%": { transform: "translateY(0)" },
         },
+        wave: {
+          "0%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(45deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
         down: "down 1s ease-in-out",
         fill: "fill 3s ease-in-out infinite",
-        water: "water 2s ease-in-out infinite",
+        wave: "wave 1s infinite",
+      },
+      backgroundImage: {
+        wave: "linear-gradient(45deg, #00b4db 0%, #0083b0 100%)",
       },
     },
   },
