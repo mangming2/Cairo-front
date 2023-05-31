@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import About from "./About";
-import Contact from "./Contact";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 import Img from "../../public/cairo.jpeg";
 import Desert from "../../public/desert.jpg";
@@ -11,8 +9,8 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
   const [currentNumber, setCurrentNumber] = useState(0);
   const animatedItem = {
     0: useScrollFadeIn("down", 1, 0),
-    1: useScrollFadeIn("down", 2, 0),
-    2: useScrollFadeIn("down", 2, 0),
+    1: useScrollFadeIn("left", 2, 0),
+    2: useScrollFadeIn("right", 2, 0),
     3: useScrollFadeIn("up", 1, 0),
     4: useScrollFadeIn("up", 1, 0),
     5: useScrollFadeIn("up", 1, 0),
@@ -105,11 +103,13 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
             </p>
           </div>
 
-          <div
-            className=" bg-desert bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
-            {...animatedItem[0]}
-          >
-            <img src={Img} className="h-[600px]" alt="logo" />
+          <div className=" bg-desert bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+            <img
+              src={Img}
+              {...(animatedItem[0] as any)}
+              className=" max-md:h-[400px] h-[600px]"
+              alt="logo"
+            />
             <div className="flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
               <h1 className="text-2xl">
@@ -121,11 +121,14 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
               </h1>
             </div>
           </div>
-          <div
-            className=" bg-desert2 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
-            {...animatedItem[1]}
-          >
-            <img src={Img} className="h-[600px]" alt="logo" />
+
+          <div className=" bg-desert2 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+            <img
+              src={Img}
+              {...(animatedItem[1] as any)}
+              className="max-md:h-[400px] h-[600px]"
+              alt="logo"
+            />
             <div className="flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
               <h1 className="text-2xl">
@@ -137,11 +140,13 @@ function Home({ sectionRefs }: { sectionRefs: any }) {
               </h1>
             </div>
           </div>
-          <div
-            className=" bg-desert3 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20"
-            {...animatedItem[2]}
-          >
-            <img src={Img} className="h-[600px]" alt="logo" />
+          <div className=" bg-desert3 bg-cover flex flex-col items-center justify-center w-[100vw] h-[800px] p-20">
+            <img
+              {...(animatedItem[2] as any)}
+              src={Img}
+              className=" max-md:h-[400px] h-[600px]"
+              alt="logo"
+            />
             <div className="flex flex-col items-center justify-center text-center">
               <h1 className="text-4xl">Title</h1>
               <h1 className="text-2xl">
