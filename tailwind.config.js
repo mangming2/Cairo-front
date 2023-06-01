@@ -9,6 +9,7 @@ module.exports = {
         desert: "url('../public/desert.jpg')",
         desert2: "url('../public/desert2.jpg')",
         desert3: "url('../public/desert3.jpg')",
+        wave: "linear-gradient(45deg, #00b4db 0%, #0083b0 100%)",
       },
       fonts: {},
       fontSize: {
@@ -49,9 +50,6 @@ module.exports = {
         down: "down 1s ease-in-out",
         fill: "fill 3s ease-in-out infinite",
         wave: "wave 1s infinite",
-      },
-      backgroundImage: {
-        wave: "linear-gradient(45deg, #00b4db 0%, #0083b0 100%)",
       },
     },
   },
